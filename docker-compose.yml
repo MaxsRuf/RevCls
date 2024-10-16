@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./web  
+    ports:
+      - "8000:8000"  
+    volumes:
+      - ./web:/app
+      - ./model:/model  
+    environment:
+      - PYTHONUNBUFFERED=1  
+
+  model:
+      build:
+        context: ./model
+        dockerfile: Dockerfile
+      volumes:
+        - ./Dataset:/app/Dataset
+        - ./model:/app/model 
+       

@@ -1,0 +1,19 @@
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результат</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'rev/css/styles.css' %}">
+</head>
+<body>
+    <div class="container"> 
+        <h1>Результат</h1>
+        <p><strong>Текст отзыва:</strong> {{ review_text }}</p>
+        <p><strong>Рейтинг:</strong> {{ rating }}</p>
+        <p><strong>Статус:</strong> {{ sentiment }}</p>
+        <a href="{% url 'review_create' %}" class="button">Отправить новый отзыв</a> 
+    </div>
+</body>
+

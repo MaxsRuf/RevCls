@@ -1,0 +1,71 @@
+/* styles.css */
+body {
+    background-color: #f0f0f0; /* Светлый фон */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Минималистичный шрифт */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Центрирование по высоте */
+}
+
+.container {
+    background-color: #ffffff; /* Белый фон для формы */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+    width: 100%;
+    max-width: 500px; /* Максимальная ширина формы */
+}
+
+h1 {
+    color: #333333; /* Темный цвет заголовка */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    resize: none; /* Запретить изменение размера текстового поля */
+}
+
+input[type="submit"] {
+    background-color: #007bff; /* Цвет кнопки */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px; /* Отступ сверху */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Цвет кнопки при наведении */
+}
+
+.button {
+    display: inline-block; /* Для кнопки */
+    background-color: #007bff; /* Цвет кнопки */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center; /* Центрирование текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Цвет кнопки при наведении */
+}

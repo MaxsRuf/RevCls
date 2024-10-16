@@ -1,0 +1,21 @@
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отправка отзыва</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'rev/css/styles.css' %}">
+</head>
+<body>
+    <div class="container"> 
+        <h1>Отправте ваш отзыв</h1>
+        
+        <form method="POST">
+            {% csrf_token %}
+            <label for="review_text">Напиcать отзыв:</label>
+            <textarea id="review_text" name="review_text" rows="5" required></textarea>
+            <input type="submit" value="Отправить отзыв">
+        </form>
+    </div>
+</body>

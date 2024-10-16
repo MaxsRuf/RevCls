@@ -1,0 +1,7 @@
+django
+numpy
+joblib
+scikit-learn
+gunicorn
+nltk
+tensorflow
